@@ -1,0 +1,16 @@
+<header>
+        <nav class ="navbar navbar-expand-md navbar-dark bg-dark">
+        <div><a  routerLink="/" class="navbar-brand">Nexii</a></div>
+        
+        <ul class="navbar-nav">
+           
+          <li><a *ngIf="loginService.isUserLogin()" routerLink="/welcome" class="nav-link">welcome</a></li>
+      
+          <li><a *ngIf="!loginService.isUserLogin()" routerLink="/" class="nav-link">Login</a></li>
+          <li><a *ngIf="loginService.isUserLogin()"  routerLink="/logout" class="nav-link">Logout</a></li>
+        
+        </ul>
+          </nav>
+        </header>
+     
+          
